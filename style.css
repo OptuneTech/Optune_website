@@ -1,0 +1,106 @@
+
+
+
+
+ul a:hover{
+  color: #fff !important;
+}
+nav li{
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 20px !important;
+}
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color: #fff !important;
+}
+
+.vd-style
+{
+    width:1000; 
+    height:800;
+}
+
+.hero-style
+{
+    position: absolute;
+    left: 30px;
+    top: 250px;
+  color: #fff !important;
+  font-size: 60px;
+}
+
+.vd-bg
+{
+    background-color: rgba(38,38,57,.93);
+    height: 100%;
+    width: 100%;
+}
+
+.exp-btn
+{
+    position: absolute;
+    left: 60px;
+    top: 570px;
+    width: 175px;
+    height: 60px;
+    padding: 15 0  !important;
+    border-radius: 30px !important;
+}
+
+.wide-bg-clr
+{
+    color: #fff;
+    background-color: black;
+}
+
+.clients-style
+{
+    font-size: 45px;
+    font-weight: bold;
+    padding: 100px 0 0 10px;
+}
+
+.client-map
+{
+    position: absolute;
+    top: 55px;
+    right: -380px !important;
+}
+
+.comp-btn
+{
+    position: absolute;
+    left: 60px;
+    top: 330px;
+    width: 175px;
+    height: 60px;
+    padding: 15 0  !important;
+    border-radius: 30px !important;
+}
+
+
+.stats-style
+{
+    background-color: rgb(56, 56, 56);
+    width:1920px;
+    height:320px;
+    padding-top: 150px;
+}
+
+.stats-title
+{
+    color: #fff;
+    font-weight: 1000;
+}
