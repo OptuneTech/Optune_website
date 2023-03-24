@@ -1,11 +1,11 @@
-body{
-  overflow-x: hidden;
+body {
+    overflow-x: hidden;
+
 }
 
 
-.navbar-bg-color
-{
-    background-color: gray !important;
+.navbar-bg-color {
+    background-color: rgb(19, 10, 10) !important;
 }
 
 ul a:hover {
@@ -52,7 +52,7 @@ li>a:hover:after {
 }
 
 .vd-bg {
-    background-color: gray;
+    background-color: rgb(19, 10, 10);
     height: 770px;
     width: 100%;
 }
@@ -60,13 +60,58 @@ li>a:hover:after {
 .exp-btn {
     position: absolute;
     left: 60px;
-    top: 525px;
+    top: 700px;
     width: 175px;
     height: 60px;
     padding: 15 0 !important;
     border-radius: 30px !important;
 }
 
+/* nav bar  */
+.navbar-nav .nav-item .nav-links {
+    font-size: 1.2em;
+    font-weight: medium;
+    padding: 30px;
+    color: rgb(252, 251, 251);
+}
+
+.navbar-nav.nav-item .nav-links:hover {
+    color: white !important;
+
+}
+
+.navbar-nav .nav-item .nav-links {
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-links::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    width: 0%;
+    content: ""; 
+    height: 3px;
+    transition: all 0.3s;
+    font-weight: bold;
+
+}
+
+.navbar-nav .nav-item .nav-links:hover::after {
+    width: 100%;
+}
+
+.logo {
+    width: 35%;
+    height: 35%;
+}
+
+.menu {
+        color: white;
+        border-color: white;
+    }
 
 
 /***** Slide Right *****/
@@ -111,12 +156,23 @@ li>a:hover:after {
 }
 
 @-webkit-keyframes fadein {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 @keyframes fadein {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -216,7 +272,7 @@ li>a:hover:after {
 }
 
 .sq-crousal4 .carousel-indicators {
-    
+
     bottom: -40px;
 }
 
@@ -240,8 +296,7 @@ li>a:hover:after {
     top: -17px;
 }
 
-.text-style
-{
+.text-style {
     color: #000;
 }
 
@@ -256,41 +311,62 @@ li>a:hover:after {
     left: 0px;
     animation-name: animation1;
     animation-duration: 1.5s;
-  }
-  .animate-2 {
+}
+
+.animate-2 {
     position: relative;
     top: 15px;
     left: 0px;
     animation-name: animation2;
     animation-duration: 1.5s;
-  }
+}
 
-  .animate-3
-  {
+.animate-3 {
     position: relative;
     top: 15px;
     left: 0px;
     animation-name: animation3;
     animation-duration: 1.5s;
-  }
+}
 
 
 
-  @keyframes animation1 {
-    0%   {left:300px; top:10px;}
-    100% {left:0px; top:10px;}
-  }
+@keyframes animation1 {
+    0% {
+        left: 300px;
+        top: 10px;
+    }
+
+    100% {
+        left: 0px;
+        top: 10px;
+    }
+}
 
 
-  @keyframes animation2 {
-    0%   {left:500px; top:15px;}
-    100% {left:0px; top:15px;}
-  }
+@keyframes animation2 {
+    0% {
+        left: 500px;
+        top: 15px;
+    }
 
-  @keyframes animation3 {
-    0%   {left:700px; top:25px;}
-    100% {left:0px; top:15px;}
-  }
+    100% {
+        left: 0px;
+        top: 15px;
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        left: 700px;
+        top: 25px;
+    }
+
+    100% {
+        left: 0px;
+        top: 15px;
+    }
+}
 
 
 
@@ -338,9 +414,7 @@ li>a:hover:after {
     font-size: 10px !important;
 }
 
-.stats-img {
-    background-image: url("stats.jpg");
-}
+
 
 .stats-title {
     color: #fff;
@@ -357,6 +431,10 @@ li>a:hover:after {
 .stats-color {
     color: #fff;
 }
+
+
+/* footer  */
+
 
 .footer-color {
     background-color: rgb(0, 0, 59) !important;
@@ -448,7 +526,7 @@ li>a:hover:after {
 
 .counter-section {
 
-    background: url(stats1.jpg) no-repeat scroll center/cover;
+    background: url(image/stats1.jpg) no-repeat scroll center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -480,10 +558,25 @@ li>a:hover:after {
 
 }
 
+.counter-count .count-plus {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 300;
+    justify-content: center;
+    height: 140px;
+    width: 140px;
+    margin: 0 auto 20px;
+
+}
+
 .counter-count h3 {
     color: #ffffff;
 }
-
+/* 
 @media (max-width: 1200px) {
     .counter-count .count {
         height: 120px;
@@ -512,4 +605,5 @@ li>a:hover:after {
         position: absolute;
         left: -100px !important;
     }
-}
+} */
+

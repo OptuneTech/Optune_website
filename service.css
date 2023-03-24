@@ -1,0 +1,217 @@
+   
+    /* nav bar  */
+    .navbar-nav .nav-item .nav-links {
+        font-size: 1.2em;
+        font-weight: medium;
+        padding: 30px;
+        color: rgb(252, 251, 251);
+    }
+
+    .navbar-nav.nav-item .nav-links:hover {
+        color: white !important;
+
+    }
+
+    .navbar-nav .nav-item .nav-links {
+        position: relative;
+    }
+
+    .navbar-nav .nav-item .nav-links::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        width: 0%;
+        content: "";
+        height: 3px;
+        transition: all 0.3s;
+        font-weight: bold;
+
+    }
+
+    .navbar-nav .nav-item .nav-links:hover::after {
+        width: 100%;
+    }
+
+       /* logo  */
+       .logo {
+        width: 35%;
+        height: 35%;
+    }
+   
+    .menu {
+        color: white;
+        border-color: white;
+    }
+
+    /* attach img  */
+    .bg-img {
+        background-image: url("https://images.pexels.com/photos/139764/pexels-photo-139764.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-repeat: no-repeat;
+        padding-top: 300px;
+        background-position: center;
+        
+    }
+
+    /* body  */
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+  
+     /* fotter */
+
+    .footer-color {
+        background-color: rgb(0, 0, 59) !important;
+        padding: 20px;
+    }
+
+    .mail-style {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .mail-style:hover {
+        text-decoration: none;
+        color: #0088e2;
+
+    }
+
+
+    .more-btn {
+        padding-left: 425px !important;
+        padding-top: 20px;
+    }
+
+
+    .sbt-btn {
+        width: 175px;
+        height: 60px;
+        padding: 15 0 !important;
+        border-radius: 30px !important;
+    }
+
+    #inputtext {
+        color: #fff !important;
+        background: transparent;
+        border-radius: 0 !important;
+        border: none;
+        border-bottom: 1px solid #979797;
+        outline: none;
+        box-shadow: none;
+    }
+
+    #inputtext:focus {
+        border-bottom: 1px solid #0088e2;
+    }
+
+    ::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: #fff !important;
+        font-size: 17px;
+    }
+
+    :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #fff !important;
+        opacity: 1;
+        font-size: 17px;
+    }
+
+    ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #fff !important;
+        opacity: 1;
+        font-size: 17px;
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #fff !important;
+        font-size: 17px;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #fff !important;
+        font-size: 17px;
+    }
+
+    ::placeholder {
+        /* Most modern browsers support this now. */
+        color: #fff !important;
+        font-size: 17px;
+    }
+
+    .footer-title-color {
+        color: #fff;
+    }
+
+    /* btn  */
+
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: absolute;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary {
+        background-color: #0b62c5;
+        color: white;
+    }
+
+    .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    .btn-primary::after {
+        background-color: #fff;
+    }
+
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+
+    .btn-animated {
+        animation: moveInBottom 5s ease-out;
+        animation-fill-mode: backwards;
+    }
+
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
