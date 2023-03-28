@@ -11,9 +11,14 @@
 
 }
 
+.navbar{
+    background-color: black;
+}
+
 .logo {
-    width: 35%;
-    height: 35%;
+    width: 50%;
+    height: 50%;
+    margin-left: 6%;
 }
 
 .navbar-nav .nav-item .nav-links {
@@ -39,13 +44,6 @@
     width: 100%;
 }
 
-
- /* logo  */
- .logo {
-    width: 35%;
-    height: 35%;
-}
-
 .menu {
     color: white;
     border-color: white;
@@ -53,7 +51,7 @@
 
 .about-hero-subtitle {
     position: absolute;
-    top: 465px;
+    top: 400px;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -62,7 +60,7 @@
 
 .about-hero-title {
     position: absolute;
-    top: 290px;
+    top: 200px;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -83,11 +81,14 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.img-fluid{
+    height:80%;
+}
 
  /* fotter */
 
 .footer-color {
-    background-color: rgb(0, 0, 59) !important;
+    background-color: #424a52 !important;
     padding: 20px;
 }
 
@@ -195,9 +196,9 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-primary {
-    background-color: #0b62c5;
-    color: white;
+.btn-bg {
+    background-color: #26799c !important;
+    color: white !important;
 }
 
 .btn::after {
@@ -213,7 +214,7 @@ body {
     transition: all .4s;
 }
 
-.btn-primary::after {
+.btn-bg::after {
     background-color: #fff;
 }
 
@@ -238,3 +239,35 @@ body {
         transform: translateY(0px);
     }
 }
+
+@media (min-width:320px) and (max-width:763px){
+    .img-fluid{
+     height: 600px !important;
+    }
+   
+    .about-hero-title{
+     position: absolute;
+     top: 100px;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     font-size: 30px;
+    }
+ 
+    .about-hero-subtitle{
+     position: absolute;
+     top: 400px;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     font-size: 20px;
+    }
+ 
+    .logo{
+     width:60%;
+     height:60%;
+    }
+ 
+ }
