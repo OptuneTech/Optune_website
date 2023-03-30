@@ -10,7 +10,7 @@
 
     /* body  */
     body {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'roboto' !important;
     }
 
     /* header img  */
@@ -74,16 +74,16 @@
 
     /* icon */
 
-    .icon-style {
-        background-color: red;
-        border: white;
-
-    }
+    
+.menu {
+    color: white;
+    border-color: white;
+}
 
     /* logo  */
     .logo {
-        width: 50%;
-        height: 50%;
+        width: 35%;
+        height: 35%;
         margin-left: 6%;
     }
      /* fotter */

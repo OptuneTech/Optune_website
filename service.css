@@ -37,8 +37,8 @@
 
        /* logo  */
        .logo {
-        width:50%;
-        height: 50%;
+        width:35%;
+        height: 35%;
         margin-left: 6%;
     }
    
@@ -58,7 +58,7 @@
 
     /* body  */
     body {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'roboto' !important;
     }
 
   
@@ -95,7 +95,7 @@
     }
 
     #inputtext {
-        color: #fff !important;
+        color:black !important;
         background: transparent;
         border-radius: 0 !important;
         border: none;
