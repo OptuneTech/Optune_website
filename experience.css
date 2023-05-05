@@ -22,45 +22,7 @@
         background-image: url("https://www.signalpartners.com/wp-content/uploads/2021/05/experience-hero-e1620989766477.jpeg");
         opacity: 0.2;
     }
-
-    /* nav bar  */
-    .navbar-styles .navbar-nav .nav-link-styles {
-        font-size: 1.2em;
-        font-weight: medium;
-        padding: 30px;
-        color: rgb(252, 251, 251);
-    }
-
-    .navbar-styles .navbar-nav .nav-link-styles:hover {
-        color: white !important;
-
-    }
-
-    .navbar-styles .navbar-nav .nav-item-styles {
-        position: relative;
-    }
-
-    .navbar-styles .navbar-nav .nav-item-styles::after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        background-color: white;
-        width: 0%;
-        content: "";
-        height: 3px;
-        transition: all 0.3s;
-        font-weight: bold;
-
-    }
-
-    .navbar-styles .navbar-nav .nav-item-styles:hover::after {
-        width: 100%;
-    }
-
     .bg-color {
-
         background-color: rgb(1, 1, 19);
     }
 
@@ -75,10 +37,6 @@
     /* icon */
 
     
-.menu {
-    color: white;
-    border-color: white;
-}
 
     /* logo  */
     .logo {
@@ -240,4 +198,82 @@
             transform: translateY(0px);
         }
     }
+    @media (max-width:427px) {
+    #navbarNav{
+        background-color: black;
+        padding: 100px;
+    }
 
+}
+
+
+.nav-link-styles{
+    font-size: 1.2em;
+    font-weight: medium;
+    padding: 30px !important;
+    color: rgb(252, 251, 251);
+}
+
+
+.nav-link-styles:hover {
+   color: white !important;
+
+}
+
+
+.nav-link-styles {
+    position: relative;
+}
+
+
+.nav-link-styles:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #ECF0F1;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .nav-link-styles:hover:before, .nav-link-styles:focus:before, .nav-link-styles:active:before {
+    left: 0;
+    right: 0;
+  }
+
+.nav-link-styles::after {
+    width: 100%;
+}
+
+
+.navbar{
+ background-color: black;
+}
+
+.nav-link-styles{
+   z-index: 100;
+}
+
+
+@media (max-width:460px) {
+    .logo{
+        width:100px;
+        height:50px;
+       }
+
+  }
+
+  strong a{
+    color: #ECF0F1 !important;
+  }
+
+  .footer-img{
+    width: 35%;
+    height: 35%;
+  }

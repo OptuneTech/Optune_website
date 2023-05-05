@@ -18,7 +18,7 @@ body{
     .navbar-nav .nav-item .nav-links {
         font-size: 1.2em;
         font-weight: medium;
-        padding: 50px;
+        padding: 30px;
         color: rgb(252, 251, 251);
     }
 
@@ -565,22 +565,22 @@ body{
     color: #ffffff;
 }
 
-
-@media (max-width:320px) {
+@media (max-width:425px) {
     nav{
-        width:50%;
+        width:100%;
         height:10%;
        }
 
        .logo{
-        width:60%;
-        height:60%;
+        width:100px;
+        height:50px;
        }
 
    
     .vd-bg{
         width:30%;
         height: 500px;
+       
     }
     
     .vd-style{
@@ -611,36 +611,20 @@ body{
     .counter-section .main-title {
         padding: 10%;
     }
-   
-}
-/* 
-@media (max-width: 1200px) {
-    .counter-count .count {
-        height: 120px;
-        font-size: 40px;
-        width: 120px;
-    }
+
+
+  #navbarNav{
+      background-color: black;
+  }
+
 }
 
-
-
-
-
-@media (max-width:2560px) {
-
-    .hero-style {
-        position: absolute;
-        left: 30px;
-        top: 250px;
-        color: #fff !important;
-        font-size: 60px;
-    }
+.nav-links{
+    padding: 30px !important;
 }
 
-@media (max-widt:768px) {
-    .navbar {
-        position: absolute;
-        left: -100px !important;
-    }
-} */
 
+.footer-img{
+    width: 35%;
+    height: 35%;
+  }
